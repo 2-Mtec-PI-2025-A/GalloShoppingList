@@ -1,0 +1,17 @@
+Configuração do GIT:
+git config --global user.name GalloJunior
+git config --global user.email gallojunior@gmail.com
+
+Criar o projeto (Fazer uma vez só):
+npx create-expo-app@latest GalloShoppingList --template blank
+
+Executar o projeto:
+cd GalloShoppingList
+npx expo start
+
+Instala o pacote web
+npx expo install react-dom react-native-web @expo/metro-runtime
+
+Instalando o pacote expo-router
+npx expo install expo-router react-native-safe-area-context react-native-screens expo-linking expo-constants expo-status-bar
+
