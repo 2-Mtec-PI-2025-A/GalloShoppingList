@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { Alert, FlatList, ImageBackground, SafeAreaView, StyleSheet, Text, TextInput, TouchableOpacity, View } from 'react-native'
 import { Ionicons } from '@expo/vector-icons';
+import ItemList from '../components/ItemList';
 
 export default function Home() {
   const [textInput, setTextInput] = useState('');
@@ -40,9 +41,7 @@ export default function Home() {
           data={items}
           keyExtractor={(item) => item.id.toString()}
           renderItem={({ item }) => 
-            <Text style={{ color: '#fff', fontSize: 20 }}>
-              {item.name}
-            </Text>
+            <ItemList item={item} />
           }
         />
 
